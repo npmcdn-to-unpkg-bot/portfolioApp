@@ -1,0 +1,58 @@
+[
+	{
+		"id": "0",
+		"title": "Space Angels",
+		"snippet": "Web",
+		"bullet": "bullet-1",
+		"imageUrl": "images/space-thumb.jpg"
+	},
+	{
+		"id": "1",
+		"title": "Buzz Away Extreme",
+		"snippet": "Web",
+		"bullet": "bullet-1",
+		"imageUrl": "images/buzzaway-thumb.jpg"
+	},
+	{
+		"id": "2",
+		"title": "Dwellingz",
+		"snippet": "Web",
+		"bullet": "bullet-1",
+		"imageUrl": "images/dwellingz-thumb.jpg"
+	},
+	{
+		"id": "3",
+		"title": "CorpInfo",
+		"snippet": "Web",
+		"bullet": "bullet-1",
+		"imageUrl": "images/corpinfo-thumb.jpg"
+	},
+	{
+		"id": "4",
+		"title": "Numberscribe",
+		"snippet": "Web",
+		"bullet": "bullet-1",
+		"imageUrl": "images/numberscribe-thumb.jpg"
+	},
+	{
+		"id": "5",
+		"title": "Don't Fear the Auditor",
+		"snippet": "E-Book",
+		"bullet": "bullet-1",
+		"imageUrl": "images/appfolio-thumb.png"
+	},
+	{
+		"id": "6",
+		"title": "Rare Earth Elements",
+		"snippet": "Infographic",
+		"bullet": "bullet-1",
+		"imageUrl": "images/good-element-thumb.png"
+	},
+	{
+		"id": "7",
+		"title": "Honeywell",
+		"snippet": "Infographic",
+		"bullet": "bullet-1",
+		"imageUrl": "images/honeywell-thumb.png"
+	}
+]

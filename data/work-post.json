@@ -1,0 +1,130 @@
+[
+	{
+		"header": "Space Angels Network",
+		"type": "Web Design",
+		"description": "Space Angels Network is a global network for angel investors. They are the largest community of space investors and entrepreneurs in the world. This site serves as an online platfrom that allows accredited investors to invest in private aerospace companies through Space Angels Network managed funds.",
+		"client": "Space Angels Network",
+		"link": "http://spaceangelsnetwork.com",
+		"imageUrl":
+			[
+				"images/space-cover.png",
+				"images/icon1.png",
+				"images/icon2.png",
+				"images/icon3.png",
+				"images/icon4.png",
+				"images/san-public-design.png"
+			]
+	},
+	{
+		"header": "Buzz Away Extreme",
+		"type": "Web Design",
+		"description": "This site is a gateway to purchase the Buzz Away Extreme products. They offer a long-lasting and extremely effective DEET-free repellent. The products can be purchase in selected online stores and some major retail stores.",
+		"client": "Quantum Health",
+		"link": "http://buzzawayextreme.com",
+		"imageUrl":
+			[
+				"images/buzzaway-cover.jpg",
+				"images/buzz-icon1.png",
+				"images/buzz-icon2.png",
+				"images/buzz-icon3.png",
+				"images/buzz-icon4.png",
+				"images/buzzaway-public-design.png"
+			]
+	},
+	{
+		"header": "Every Home Has a Story",
+		"type": "Web Design",
+		"description": "Landing page design for a startup in the real estate industry. The site serves as a platform for real estate agents to show their listing and takes potential home buyers beyond the facts, stats and square footage. The build features a custom backend editorial tool and and elegant, magazine-quality layout.",
+		"client": "Dwellingz",
+		"link": "http://dwellingz.com",
+		"imageUrl":
+			[
+				"images/dwellingz-cover.jpg",
+				"images/dwellingz-icon1.png",
+				"images/dwellingz-icon2.png",
+				"images/dwellingz-icon3.png",
+				"images/dwellingz-icon4.png",
+				"images/dwellingz-public-design.png"
+			]
+	},
+	{
+		"header": "Cloud is the New Normal",
+		"type": "Web Design",
+		"description": "CorpInfo is a leading technology firm providing Cloud, Consulting Services, Infrastructure Solutions, and Managed Services. The site is build on a custom Wordpress, that serves as an information hub for potential customers. The goal is to drive more conversion from the site through their contact form.",
+		"client": "CorpInfo",
+		"link": "http://corpinfo.com",
+		"imageUrl":
+			[
+				"images/corpinfo-cover.jpg",
+				"images/corpinfo-icon1.png",
+				"images/corpinfo-icon2.png",
+				"images/corpinfo-icon3.png",
+				"images/corpinfo-icon4.png",
+				"images/corpinfo-public-design.jpg"
+			]
+	},
+	{
+		"header": "Making Charts has Never Been Easier",
+		"type": "Web Design",
+		"description": "Numberscrie wants to help people build the most visually arresting charts possible. My job was to work magic on the front end and design. I was able to work with their talented team to help bring their vision to life.",
+		"client": "Numberscribe",
+		"link": "http://numberscribe.com",
+		"imageUrl":
+			[
+				"images/numberscribe-cover.png",
+				"images/numberscribe-icon1.png",
+				"images/numberscribe-icon2.png",
+				"images/numberscribe-icon3.png",
+				"images/numberscribe-icon4.png",
+				"images/numberscribe-public-design.png"
+			]
+	},
+	{
+		"header": "Auditors Aren't Enemies",
+		"type": "E-Book",
+		"description": "Audits can seem overwhelming. If you know what to expect and follow best practices, you can avoid a world of stress. It’s important to understand that audits are done with the intention of making sure your property management business complies with local real estate regulations and accounting principles.",
+		"client": "Appfolio",
+		"link": "http://www.appfolio.com/blog/2015/01/dont-fear-the-auditor-audit-proof-your-property-management-business-in-3-easy-steps/",
+		"imageUrl":
+			[
+				"images/appfolio-cover.png",
+				"images/appfolio-icon1.png",
+				"images/appfolio-icon2.png",
+				"images/appfolio-icon3.png",
+				"images/appfolio-icon4.png",
+				"images/appfolio-public-design.png"
+			]
+	},
+	{
+		"header": "Rare Earth Elements",
+		"type": "Infographic",
+		"description": "There are currently 17 rare earth elements (REE). Although relatively abundant, rare earth deposits take longer to find because they aren’t as concentrated in areas as other elements. This Infographic illustrate the story.",
+		"client": "Good Magazine collaboration with Column Five",
+		"link": "https://magazine.good.is/infographics/infographic-the-future-global-supply-of-rare-earth-elements",
+		"imageUrl":
+			[
+				"images/good-element-cover.png",
+				"images/good-element-icon1.png",
+				"images/good-element-icon2.png",
+				"images/good-element-icon3.png",
+				"images/good-element-icon4.png",
+				"images/good-element-public-design.png"
+			]
+	},
+	{
+		"header": "Cyber Security: A Perfect Storm",
+		"type": "Infographic",
+		"description": "As companies and industries increasingly rely on technology, security risks become greater. With growing numbers of Windows machines and increased scarcity of skilled technical resources, a “perfect storm” of cyber threats in production facilities is looming. Check out the infographic below.",
+		"client": "Honeywell collaboration with Column Five",
+		"link": "https://www.honeywellprocess.com/library/marketing/brochures/honeywell-industrial-IT-solutions-infographics.pdf",
+		"imageUrl":
+			[
+				"images/honeywell-cover.png",
+				"images/honeywell-icon1.png",
+				"images/honeywell-icon2.png",
+				"images/honeywell-icon3.png",
+				"images/honeywell-icon4.png",
+				"images/honeywell-public-design.png"
+			]
+	}
+]

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+<head>
+<meta charset="utf-8">
+<title>My Angular Portfolio Site</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+<!-- HEADER AND NAVBAR -->
+
+<!-- MAIN CONTENT AND INJECTED VIEWS -->
+<section>
+
+	<div ui-view="master"></div>
+
+</section>
+
+<!-- BACK TO TOP BUTTON -->
+<a href="#0" class="cd-top"></a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://code.angularjs.org/1.5.0-rc.0/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.14/angular-ui-router.min.js"></script>
+<script src="https://code.angularjs.org/1.5.0-rc.0/angular-animate.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/controllers.js"></script>
+<script src="app/main.js"></script>
+
+</body>
+
+</html>
