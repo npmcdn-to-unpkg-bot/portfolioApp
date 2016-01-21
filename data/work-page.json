@@ -54,5 +54,19 @@
 		"snippet": "Infographic",
 		"bullet": "bullet-1",
 		"imageUrl": "images/honeywell-thumb.png"
+	},
+	{
+		"id": "8",
+		"title": "Socially Devoted to You",
+		"snippet": "Infographic",
+		"bullet": "bullet-1",
+		"imageUrl": "images/demandforce1-thumb.png"
+	},
+	{
+		"id": "9",
+		"title": "Domain Nation",
+		"snippet": "Infographic",
+		"bullet": "bullet-1",
+		"imageUrl": "images/demandforce2-thumb.png"
 	}
 ]

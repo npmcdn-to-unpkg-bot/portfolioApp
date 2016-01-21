@@ -126,5 +126,37 @@
 				"images/honeywell-icon4.png",
 				"images/honeywell-public-design.png"
 			]
+	},
+	{
+		"header": "Socially Devoted to You",
+		"type": "Infographic",
+		"description": "It’s one thing to simply set up a Facebook Page for your business, but it’s another to actively engage customers in conversation, respond to feedback or questions, and be socially devoted to your fan base. Take a look at this chart highlighting the major advantages of being socially engaged to your customers, and learn 5 great ways you can stay committed to your customers.",
+		"client": "Demandforce collaboration with Column Five",
+		"link": "http://www.demandforce.com/resources/socially-devoted-to-you-what-is-the-roi-of-being-attentive-to-your-customers/",
+		"imageUrl":
+			[
+				"images/demandforce1-cover.png",
+				"images/demandforce1-icon1.png",
+				"images/demandforce1-icon2.png",
+				"images/demandforce1-icon3.png",
+				"images/demandforce1-icon4.png",
+				"images/demandforce1-public-design.png"
+			]
+	},
+	{
+		"header": "New World Domain Nation",
+		"type": "Infographic",
+		"description": "Until recently, the Internet’s generic top-level domain naming space has remained a mostly closed system. It currently has only 22 variations, including the familiar “.com” and “.net” domain extensions. This infographic touched on the different level domains and hot it effects the world.",
+		"client": "Demandforce collaboration with Column Five",
+		"link": "https://dribbble.com/shots/710065-New-World-Domain-Nation",
+		"imageUrl":
+			[
+				"images/demandforce2-cover.png",
+				"images/demandforce2-icon1.png",
+				"images/demandforce2-icon2.png",
+				"images/demandforce2-icon3.png",
+				"images/demandforce2-icon4.png",
+				"images/demandforce2-public-design.png"
+			]
 	}
 ]
