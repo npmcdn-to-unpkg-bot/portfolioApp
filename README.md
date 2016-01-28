@@ -1,2 +1,2 @@
 # My Personal Site
-Made with Angular framework with Bourbon and Neat. 
+Made with Angular framework and SCSS with some Bourbon and Neat. 
