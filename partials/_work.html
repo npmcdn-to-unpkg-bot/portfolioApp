@@ -1,31 +1,35 @@
-<div id="navbarUI" ui-view="navbar"></div>
+<nav id="navbarUI" ui-view="navbar"></nav>
 
-<div class="jumbotron text-center">
+<section class="work-jumbotron">
+
 	<h1>Under Construction</h1>
-</div>
 
-<div class="content-container">
-	<div class="container-fluid work-images">
-		<ul class="row">
-				
-			<li class="col-sm-6 col-md-4 box col-lg-3" ng-repeat="work in posts">
+</section>
 
-				<div class="content">
+<section id="primary-container">
 
-					<div class="project-thumb">
-						<a ui-sref="work-content({ workId: work.id })"><img class="cover" ng-src="{{work.imageUrl}}"></a>
-					</div>
-					<div class="description">
-						<span class="circle {{ work.bullet }}"></span>
-						<p> {{work.snippet}} </p>
-						<a ui-sref="work-content({ workId: work.id })"><h2> {{work.title}} </h2></a>
-					</div>
+	<div class="row">
+			
+		<article ng-repeat="work in posts">
+
+			<div class="content">
+
+				<div class="project-thumb">
+					<a ui-sref="work-post({ workId: work.id })"><img class="cover" ng-src="{{work.imageUrl}}"></a>
 				</div>
 
-			</li>
-				
-		</ul>
-	</div>
-<div class="content-container">
+				<div class="description">
+					<span class="circle {{ work.bullet }}"></span>
+					<h4> {{work.snippet}} </h4>
+					<a ui-sref="work-post({ workId: work.id })"><h2> {{work.title}} </h2></a>
+				</div>
 
-<div id="footerUI" ui-view="footer"></div>
+			</div>
+
+		</article>
+			
+	</div>
+
+</section>
+
+<footer id="footerUI" ui-view="footer"></footer>

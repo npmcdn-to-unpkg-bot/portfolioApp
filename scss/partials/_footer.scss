@@ -1,0 +1,59 @@
+footer {
+	@include outer-container($max-width);
+	font-size: 1.4rem;
+
+	.row {
+		@include span-columns(12 of 12);
+	}
+
+	.social {
+		@include span-columns(12 of 12, collapse);
+		@include respond-to(sm-screens) { @include span-columns(8 of 12, collapse); }
+		@include respond-to(md-screens) { @include span-columns(8 of 12, collapse); }
+		@include respond-to(lg-screens) { @include span-columns(8 of 12, collapse); }
+		background-color: $black;
+		padding: 22px 30px;
+
+		ul {
+			padding: 0;
+			display: inline-block;
+
+			li {
+				display: inline-block;
+				margin-right: 15px;
+
+				a {
+					color: white;
+				}
+			}
+		}
+
+		span {
+			float: right;
+			color: white;
+			font-weight: $light;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			display: none;
+			@include respond-to(all-screens) { display: block; display: inline; }
+		}
+
+		.fa-bolt {
+			color: $blue;
+		}	
+	}
+
+	.contact {
+		@include span-columns(12 of 12, collapse);
+		@include respond-to(sm-screens) { @include span-columns(4 of 12, collapse); }
+		@include respond-to(md-screens) { @include span-columns(4 of 12, collapse); }
+		@include respond-to(lg-screens) { @include span-columns(4 of 12, collapse); }
+		@include button-bg($blue);
+		@include transition(all 0.2s ease);
+		color: white;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: $bold;
+		padding: 22px 30px;
+	}
+}

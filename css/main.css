@@ -236,6 +236,7 @@ svg {
 	text-transform: uppercase;
 	margin-bottom: 30px;
 	padding-right: 30px;
+	visibility: visible;
 }
 
 @-webkit-keyframes entry {
@@ -274,7 +275,6 @@ ul.row {
 	height: auto;
 	overflow: hidden;
 	background-color: #fff;
-	border-radius: 2px;
 	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 	-webkit-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;

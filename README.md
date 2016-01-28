@@ -1,2 +1,2 @@
-# My Angular Site
-Made with angular framework.
+# My Personal Site
+Made with Angular framework with Bourbon and Neat. 

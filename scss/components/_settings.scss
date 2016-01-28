@@ -1,0 +1,18 @@
+.vertical-center 	{ @include center(false, true); }
+.horizontal-center 	{ @include center(true, false); }
+.center				{ @include center; }
+
+$max-width: 1600px;
+
+.bullet-1 { background-color: $red; }
+
+$light-border: 1px solid #e2e2e2;
+$blue-border: 1px solid $blue;
+$grey-border: 1px solid #D8DFE5;
+
+.push-down { 
+	margin-bottom: 30px; @include transition(all 0.3s 0.2s); 
+	
+	@include respond-to(md-screens) { margin-bottom: 0px; }
+	@include respond-to(lg-screens) { margin-bottom: 0px; }
+}

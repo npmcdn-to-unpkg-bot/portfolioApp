@@ -1,0 +1,27 @@
+nav {
+	background-color: white;
+	@include outer-container(100%);
+	padding: 0px 30px;
+	@include respond-to(md-screens) { padding: 14px 30px }
+	@include respond-to(lg-screens) { padding: 14px 30px }
+	border-bottom: $light-border;
+	@include fix-to-top;
+	@include transition(top 0.5s cubic-bezier(0.5, 0, 0, 1));
+}
+
+.logo {
+	width: 55px;
+	@include respond-to(lg-screens) { width: 60px; }
+	padding: 10px;
+	@include center-block;
+
+	svg {
+		margin-bottom: -1px;
+	}
+}
+
+.nav-up {
+	top: -53px;
+	@include respond-to(md-screens) { top: -84px; }
+	@include respond-to(lg-screens) { top: -84px; }
+}

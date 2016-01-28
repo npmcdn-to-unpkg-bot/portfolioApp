@@ -39,17 +39,17 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
 		})
 
 		// child of work
-		.state('work-content', {
+		.state('work-post', {
 			url: '/work/:workId',
 			views: {
 				'master': {
-					templateUrl: 'partials/_workContent.html',
+					templateUrl: 'partials/_work-post.html',
 					controller: 'singlePostController'
 				},
-				'navbar@work-content': {
+				'navbar@work-post': {
 					templateUrl: 'partials/_secondary-navbar.html'
 				},
-				'footer@work-content': {
+				'footer@work-post': {
 					templateUrl: 'partials/_footer.html'
 				}
 			}

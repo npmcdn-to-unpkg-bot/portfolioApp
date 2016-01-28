@@ -1,0 +1,76 @@
+<nav id="navbarUI" ui-view="navbar"></nav>
+
+<!-- Work Header -->
+<section class="work-post-jumbotron">
+	<h1>{{ post.header }}</h1>
+	<img ng-src="{{ post.imageUrl[0] }}">
+</section>
+
+<!-- Work descriptions -->
+<section class="work-description">
+
+	<div class="row">
+
+		<div class="quarter push-down">
+			<h4>— Client</h4>
+			<h2>{{ post.client }}</h2>
+		</div>
+
+		<div class="quarter push-down">
+			<h4>— Project Type</h4>
+			<h2>{{ post.type }}</h2>
+		</div>
+
+		<div class="half push-down">
+			<h4>— Project Description</h4>
+			<h3>{{ post.description }}</h3>
+		</div>
+
+		<div class="quarter">
+			<h4>— In The Wild</h4>
+			<a class="btn solid-btn" href="{{ post.link }}" ng-click="link" target="_blank">View Here <i class="fa fa-chevron-right"></i></a>
+		</div>
+
+	</div>
+
+</section>
+
+<!-- Work Images -->
+<section class="work-images">
+
+		<div class="row">
+
+			<div class="full">
+				<img ng-src="{{post.imageUrl[5]}}">
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="half">
+				<img class="cover" ng-src="{{post.imageUrl[1]}}">
+			</div>
+
+			<div class="half">
+				<img class="cover" ng-src="{{post.imageUrl[2]}}">
+			</div>
+
+			<div class="half">
+				<img class="cover" ng-src="{{post.imageUrl[3]}}">
+			</div>
+
+			<div class="half">
+				<img class="cover" ng-src="{{post.imageUrl[4]}}">
+			</div>
+
+		</div>
+
+</section>
+	
+<a class="back-to-gallery" ui-sref="work">
+		<span class="square1"></span>
+		<span class="square2"></span>
+</a>
+
+<footer id="footerUI" ui-view="footer"></footer>
