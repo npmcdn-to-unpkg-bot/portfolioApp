@@ -70,6 +70,8 @@
 	opacity: 0;
 	z-index: 999;
 	border: 1px solid #0070A6;
+	visibility: hidden;
+	@include respond-to(all-screens) { visibility: visible; }
 	@include transition(all 0.5s);
 
 	&:hover {

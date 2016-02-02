@@ -3,9 +3,10 @@ section .work-jumbotron {
 	padding: 230px 0px 150px 0px;
 }
 
-section #primary-container {
+section .work-posts {
 	@include outer-container($max-width);
 	@include transition(all 0.3s ease);
+	background-color: $off-white;
 	@include respond-to(xs-screens) { padding: 15px; }
 	@include respond-to(sm-screens) { padding: 20px; }
 	@include respond-to(md-screens) { padding: 15px 30px; }

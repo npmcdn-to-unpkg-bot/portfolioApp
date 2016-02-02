@@ -3,16 +3,17 @@ footer {
 	font-size: 1.4rem;
 
 	.row {
-		@include span-columns(12 of 12);
+		@include span-columns(12);
 	}
 
 	.social {
-		@include span-columns(12 of 12, block-collapse);
-		@include respond-to(sm-screens) { @include span-columns(8 of 12, block-collapse); }
+		@include span-columns(12 of 12);
+		@include respond-to(sm-screens) { @include span-columns(8 of 12, block-collapse); } 
 		@include respond-to(md-screens) { @include span-columns(8 of 12, block-collapse); }
 		@include respond-to(lg-screens) { @include span-columns(8 of 12, block-collapse); }
 		background-color: $black;
 		padding: 22px 30px;
+		margin-right: 0;
 
 		ul {
 			padding: 0;
@@ -44,10 +45,10 @@ footer {
 	}
 
 	.contact {
-		@include span-columns(12 of 12, block-collapse);
-		@include respond-to(sm-screens) { @include span-columns(4 of 12, block-collapse); }
-		@include respond-to(md-screens) { @include span-columns(4 of 12, block-collapse); }
-		@include respond-to(lg-screens) { @include span-columns(4 of 12, block-collapse); }
+		@include span-columns(12 of 12);
+		@include respond-to(sm-screens) { @include span-columns(4 of 12); }
+		@include respond-to(md-screens) { @include span-columns(4 of 12); }
+		@include respond-to(lg-screens) { @include span-columns(4 of 12); }
 		@include button-bg($blue);
 		@include transition(all 0.2s ease);
 		color: white;

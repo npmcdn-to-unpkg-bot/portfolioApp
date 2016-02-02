@@ -6,6 +6,7 @@ section.work-post-jumbotron {
 	z-index: -999;
 	@include respond-to(md-screens) { position: fixed; top: 0; left: 0; height: 500px; margin-top: 0; }
 	@include respond-to(lg-screens) { position: fixed; top: 0; left: 0; height: 500px; margin-top: 0; }
+	@include respond-to(xl-screens) { position: fixed; top: 0; left: 50%; height: 500px; margin-top: 0; margin-left: -($max-width/2); }
 
 	h1 {
 		@include center;
