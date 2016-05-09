@@ -1,5 +1,6 @@
 [
 	{
+		"id": "spaceangels",
 		"header": "Space Angels Network",
 		"type": "Web Design",
 		"description": "Space Angels Network is a global network for angel investors. They are the largest community of space investors and entrepreneurs in the world. This site serves as an online platfrom that allows accredited investors to invest in private aerospace companies through Space Angels Network managed funds.",
@@ -16,6 +17,7 @@
 			]
 	},
 	{
+		"id": "buzzaway",
 		"header": "Buzz Away Extreme",
 		"type": "Web Design",
 		"description": "This site is a gateway to purchase the Buzz Away Extreme products. They offer a long-lasting and extremely effective DEET-free repellent. The products can be purchase in selected online stores and some major retail stores.",
@@ -32,6 +34,7 @@
 			]
 	},
 	{
+		"id": "dwellingz",
 		"header": "Every Home Has a Story",
 		"type": "Web Design",
 		"description": "Landing page design for a startup in the real estate industry. The site serves as a platform for real estate agents to show their listing and takes potential home buyers beyond the facts, stats and square footage. The build features a custom backend editorial tool and and elegant, magazine-quality layout.",
@@ -48,6 +51,7 @@
 			]
 	},
 	{
+		"id": "corpinfo",
 		"header": "Cloud is the New Normal",
 		"type": "Web Design",
 		"description": "CorpInfo is a leading technology firm providing Cloud, Consulting Services, Infrastructure Solutions, and Managed Services. The site is build on a custom Wordpress, that serves as an information hub for potential customers. The goal is to drive more conversion from the site through their contact form.",
@@ -64,6 +68,7 @@
 			]
 	},
 	{
+		"id": "numberscribe",
 		"header": "Making Charts has Never Been Easier",
 		"type": "Web Design",
 		"description": "Numberscrie wants to help people build the most visually arresting charts possible. My job was to work magic on the front end and design. I was able to work with their talented team to help bring their vision to life.",
@@ -80,6 +85,7 @@
 			]
 	},
 	{
+		"id": "appfolio",
 		"header": "Auditors Aren't Enemies",
 		"type": "E-Book",
 		"description": "Audits can seem overwhelming. If you know what to expect and follow best practices, you can avoid a world of stress. It’s important to understand that audits are done with the intention of making sure your property management business complies with local real estate regulations and accounting principles.",
@@ -96,6 +102,7 @@
 			]
 	},
 	{
+		"id": "rare-earth-elements",
 		"header": "Rare Earth Elements",
 		"type": "Infographic",
 		"description": "There are currently 17 rare earth elements (REE). Although relatively abundant, rare earth deposits take longer to find because they aren’t as concentrated in areas as other elements. This Infographic illustrate the story.",
@@ -112,6 +119,7 @@
 			]
 	},
 	{
+		"id": "honeywell",
 		"header": "Cyber Security: A Perfect Storm",
 		"type": "Infographic",
 		"description": "As companies and industries increasingly rely on technology, security risks become greater. With growing numbers of Windows machines and increased scarcity of skilled technical resources, a “perfect storm” of cyber threats in production facilities is looming. Check out the infographic below.",
@@ -128,6 +136,7 @@
 			]
 	},
 	{
+		"id": "socially-devoted",
 		"header": "Socially Devoted to You",
 		"type": "Infographic",
 		"description": "It’s one thing to simply set up a Facebook Page for your business, but it’s another to actively engage customers in conversation, respond to feedback or questions, and be socially devoted to your fan base. Take a look at this chart highlighting the major advantages of being socially engaged to your customers, and learn 5 great ways you can stay committed to your customers.",
@@ -144,6 +153,7 @@
 			]
 	},
 	{
+		"id": "domain-nation",
 		"header": "New World Domain Nation",
 		"type": "Infographic",
 		"description": "Until recently, the Internet’s generic top-level domain naming space has remained a mostly closed system. It currently has only 22 variations, including the familiar “.com” and “.net” domain extensions. This infographic touched on the different level domains and hot it effects the world.",

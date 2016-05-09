@@ -36,7 +36,7 @@ BACK TO TOP BUTTON
 /************************************
 HIDE HEADER ON SCROLL DOWN
 *************************************/
-
+/*
 	var didScroll;
 	var lastScrollTop = 0;
 	var delta = 5;
@@ -74,5 +74,5 @@ HIDE HEADER ON SCROLL DOWN
 	    
 	    lastScrollTop = st;
 	}
-
+*/
 });

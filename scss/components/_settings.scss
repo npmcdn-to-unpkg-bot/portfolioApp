@@ -2,7 +2,7 @@
 .horizontal-center 	{ @include center(true, false); }
 .center				{ @include center; }
 
-$max-width: 1600px;
+$max-width: 1200px;
 
 .bullet-1 { background-color: $red; }
 

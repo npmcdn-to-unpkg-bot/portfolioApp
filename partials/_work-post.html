@@ -67,10 +67,10 @@
 		</div>
 
 </section>
-	
-<a class="back-to-gallery" ui-sref="work">
-		<span class="square1"></span>
-		<span class="square2"></span>
-</a>
+
+<div class="pagination">
+	<a ui-sref="work-post({ workId:prevWork })" class="previous-btn">{{ workID.id }}</a>
+	<a ui-sref="work-post({ workId:nextWork })" class="next-btn"></a>
+</div>
 
 <footer id="footerUI" ui-view="footer"></footer>

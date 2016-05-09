@@ -58,6 +58,7 @@
 }
 
 // Back-to-Top
+
 .cd-top {
 	height: 60px;
 	width: 60px;
@@ -82,4 +83,30 @@
 		opacity: 1;
 		@include animation(rubberBand 0.7s ease-in);
 	}
+}
+
+// Previous & Next Buttons
+
+.previous-btn, .next-btn {
+	@include transition(all 0.2s);
+}
+
+.previous-btn {
+	width: 40px;
+	height: 60px;
+	background: $red;
+	float: left;
+	border-radius: 0 2px 2px 0;
+}
+
+.next-btn {
+	width: 40px;
+	height: 60px;
+	background: $red;
+	float: right;
+	border-radius: 2px 0px 0px 2px;
+}
+
+.previous-btn:hover, .next-btn:hover {
+	width: 100px;
 }

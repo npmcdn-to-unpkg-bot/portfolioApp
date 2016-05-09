@@ -36,6 +36,7 @@ section .work-posts {
 					&:hover {
 						box-shadow: 0px 20px 25px rgba(1,30,30,0.20);
 						@include transform(translateY(-5px));
+						@include transform(scale(1.03));
 					}
 				}
 
