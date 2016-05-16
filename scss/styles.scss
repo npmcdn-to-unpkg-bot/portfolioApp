@@ -9,6 +9,6 @@ html {
 	// @include respond-to(xs-screens) { font-size: 45%; } 
 	// @include respond-to(sm-screens) { font-size: 50%; } 
 }
-body { background-color: $bg-color; font-family: $roboto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { background-color: $off-white; font-family: $roboto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 @import "partials/all";

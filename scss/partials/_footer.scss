@@ -1,5 +1,5 @@
 footer {
-	@include outer-container($max-width);
+	@include outer-container(100%);
 	font-size: 1.4rem;
 
 	.row {

@@ -22,7 +22,7 @@ section .work-posts {
 			@include respond-to(xs-screens) 	{ @include span-columns(6 of 12); @include omega(2n); @include pad(0px 0px 15px 0px); }
 			@include respond-to(sm-screens) 	{ @include span-columns(4 of 12); @include omega(3n); @include pad(0px 0px 20px 0px); }
 			@include respond-to(md-screens) 	{ @include span-columns(4 of 12); @include omega(3n); @include pad(15px 0px 15px 0px); }
-			@include respond-to(lg-screens) 	{ @include span-columns(3 of 12); @include omega(4n); @include pad(15px 0px 15px 0px); }
+			@include respond-to(lg-screens) 	{ @include span-columns(4 of 12); @include omega(3n); @include pad(15px 0px 15px 0px); }
 
 
 			.content {
@@ -39,7 +39,10 @@ section .work-posts {
 						@include transform(scale(1.03));
 					}
 				}
-
+				
+				.project-thumb {
+					overflow: hidden;
+				}
 				.project-thumb img {
 					width: 100%;
 				}

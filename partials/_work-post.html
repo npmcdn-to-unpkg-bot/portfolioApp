@@ -9,34 +9,38 @@
 <!-- Work descriptions -->
 <section class="work-description">
 
-	<div class="row">
+	<div class="site-container">
+		<div class="row">
 
-		<div class="quarter push-down">
-			<h4>— Client</h4>
-			<h2>{{ post.client }}</h2>
+			<div class="quarter push-down">
+				<h4>— Client</h4>
+				<h2>{{ post.client }}</h2>
+			</div>
+
+			<div class="quarter push-down">
+				<h4>— Project Type</h4>
+				<h2>{{ post.type }}</h2>
+			</div>
+
+			<div class="half push-down">
+				<h4>— Project Description</h4>
+				<h3>{{ post.description }}</h3>
+			</div>
+
+			<div class="quarter">
+				<h4>— In The Wild</h4>
+				<a class="btn solid-btn" href="{{ post.link }}" ng-click="link" target="_blank">View Here <i class="fa fa-chevron-right"></i></a>
+			</div>
+
 		</div>
-
-		<div class="quarter push-down">
-			<h4>— Project Type</h4>
-			<h2>{{ post.type }}</h2>
-		</div>
-
-		<div class="half push-down">
-			<h4>— Project Description</h4>
-			<h3>{{ post.description }}</h3>
-		</div>
-
-		<div class="quarter">
-			<h4>— In The Wild</h4>
-			<a class="btn solid-btn" href="{{ post.link }}" ng-click="link" target="_blank">View Here <i class="fa fa-chevron-right"></i></a>
-		</div>
-
 	</div>
 
 </section>
 
 <!-- Work Images -->
 <section class="work-images">
+
+	<div class="site-container">
 
 		<div class="row">
 
@@ -66,11 +70,10 @@
 
 		</div>
 
+	</div>	
+
 </section>
 
-<div class="pagination">
-	<a ui-sref="work-post({ workId:prevWork })" class="previous-btn">{{ workID.id }}</a>
-	<a ui-sref="work-post({ workId:nextWork })" class="next-btn"></a>
-</div>
+<a ui-sref="work" class="sticky-home sticky-btn"><i class="fa fa-home fa-lg"></i></a>
 
 <footer id="footerUI" ui-view="footer"></footer>

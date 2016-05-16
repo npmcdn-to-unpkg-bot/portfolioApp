@@ -19,8 +19,19 @@ BACK TO TOP BUTTON
 	$(window).scroll(function(){
 
 		var windowTop = $(window).scrollTop();
+		
+		if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+      		$('.sticky-btn').css({
+      			bottom: 90
+      		});
+   		} else {
+   			$('.sticky-btn').css({
+      			bottom: 30
+      		});
+   		}
 
 		( windowTop > offset ) ? el.addClass('cd-is-visible') : el.removeClass('cd-is-visible');
+		( windowTop > offset ) ? $('.sticky-home').addClass('home-visible') : $('.sticky-home').removeClass('home-visible');
 
 	});
 

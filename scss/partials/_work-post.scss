@@ -4,9 +4,9 @@ section.work-post-jumbotron {
 	position: relative;
 	margin-top: 52px;
 	z-index: -999;
-	@include respond-to(md-screens) { position: fixed; top: 0; left: 0; height: 500px; margin-top: 0; }
-	@include respond-to(lg-screens) { position: fixed; top: 0; left: 0; height: 500px; margin-top: 0; }
-	@include respond-to(xl-screens) { position: fixed; top: 0; left: 50%; height: 500px; margin-top: 0; margin-left: -($max-width/2); }
+	@include respond-to(md-screens) { position: fixed; top: 0; left: 0; height: 500px; width: 100%; margin-top: 0; }
+	@include respond-to(lg-screens) { position: fixed; top: 0; left: 0; height: 500px; width: 100%; margin-top: 0; }
+	@include respond-to(xl-screens) { position: fixed; top: 0; left: 50%; height: 500px; width: 100%; margin-top: 0; margin-left: -($max-width/2); }
 
 	h1 {
 		@include center;
@@ -17,13 +17,12 @@ section.work-post-jumbotron {
 
 	img {
 		width: 100%;
-		max-width: $max-width;
 		margin-bottom: -2px;
 	}
 }
 
 section.work-description {
-	@include outer-container($max-width);
+	@include outer-container(100%);
 	background-color: white;
 	padding: 15px;
 	border-bottom: $grey-border;
@@ -32,6 +31,11 @@ section.work-description {
 	@include respond-to(sm-screens) { padding: 30px; }
 	@include respond-to(md-screens) { margin-top: 500px; padding-top: 30px; padding-bottom: 30px; }
 	@include respond-to(lg-screens) { margin-top: 500px; padding-top: 30px; padding-bottom: 30px; }
+
+	.site-container {
+		max-width: 1170px;
+		margin: auto;
+	}
 
 	.row {
 		@include span-columns(12 of 12);
@@ -57,30 +61,34 @@ section.work-description {
 }
 
 section.work-images {
-	@include outer-container($max-width);
-	background-color: $off-white;
+	@include outer-container(100%);
+	background-color: $bg-color;
 
 	img {
 		width: 100%;
-		margin-bottom: -2px;
+		margin-bottom: -3px;
+	}
+
+	.site-container {
+		max-width: 1170px;
+		margin: auto;
 	}
 
 	.row {
 		@include span-columns(12 of 12);
 
 		.full {
-			width: 100%;;
-			padding: 15px;
-			@include respond-to(sm-screens) { padding: 30px; }
-			@include respond-to(md-screens) { padding: 30px; }
-			@include respond-to(lg-screens) { padding: 60px; }
+			width: 100%;
+			// @include respond-to(sm-screens) { padding: 30px; }
+			// @include respond-to(md-screens) { padding: 30px; }
+			// @include respond-to(lg-screens) { padding: 60px; }
 
 			img {
-				border-radius: 2px;
-				box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-				@include respond-to(sm-screens) { border-radius: 4px; }
-				@include respond-to(md-screens) { border-radius: 4px; }
-				@include respond-to(lg-screens) { border-radius: 4px; }
+				// border-radius: 2px;
+				// box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+				// @include respond-to(sm-screens) { border-radius: 4px; }
+				// @include respond-to(md-screens) { border-radius: 4px; }
+				// @include respond-to(lg-screens) { border-radius: 4px; }
 			}
 		}
 		.half {
@@ -91,19 +99,4 @@ section.work-images {
 			@include respond-to(lg-screens) { width: 25%; }
 		}
 	}
-}
-
-.pagination {
-	position: fixed;
-	width: 100%;
-	top: 50%;
-	margin-top: -30px;
-}
-
-.previous-container {
-	
-}
-
-.next-container {
-	
 }
