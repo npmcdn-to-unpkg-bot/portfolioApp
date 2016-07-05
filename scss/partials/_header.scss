@@ -7,17 +7,47 @@ nav {
 	border-bottom: $light-border;
 	@include fix-to-top;
 	@include transition(top 0.5s cubic-bezier(0.5, 0, 0, 1));
-}
 
-.logo {
-	width: 55px;
-	@include respond-to(md-screens) { width: 60px; }
-	@include respond-to(lg-screens) { width: 60px; }
-	padding: 10px;
-	@include center-block;
+	.site-container {
+		@include outer-container(100%);
 
-	svg {
-		margin-bottom: -1px;
+		.logo {
+			display: inline-block;
+			width: 55px;
+			@include respond-to(md-screens) { width: 60px; }
+			@include respond-to(lg-screens) { width: 60px; }
+			padding: 10px;
+			margin-left: -10px;
+
+			svg {
+				margin-bottom: -1px;
+			}
+		}
+
+		ul.nav {
+			display: inline-block;
+			@include center(false,true);
+			right: 0;
+
+			li {
+				display: inline-block;
+				margin-right: 30px;
+				text-transform: uppercase;
+
+				a {
+					font-size: 1.2rem;
+					color: $grey;
+					font-weight: $bold;
+					padding-bottom: 5px;
+					@include respond-to(all-screens) { font-size: 1.6rem; }
+				}
+
+				.current {
+					color: $black;
+					border-bottom: 1px dotted $black;
+				}
+			}
+		}
 	}
 }
 

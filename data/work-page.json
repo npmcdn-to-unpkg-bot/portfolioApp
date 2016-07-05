@@ -1,72 +1,38 @@
 [
 	{
-		"id": "spaceangels",
-		"title": "Space Angels",
-		"snippet": "Web",
-		"bullet": "bullet-1",
-		"imageUrl": "images/space-thumb.jpg"
-	},
-	{
-		"id": "buzzaway",
-		"title": "Buzz Away Extreme",
-		"snippet": "Web",
-		"bullet": "bullet-1",
-		"imageUrl": "images/buzzaway-thumb.jpg"
-	},
-	{
-		"id": "dwellingz",
-		"title": "Dwellingz",
-		"snippet": "Web",
-		"bullet": "bullet-1",
-		"imageUrl": "images/dwellingz-thumb.jpg"
-	},
-	{
 		"id": "corpinfo",
 		"title": "CorpInfo",
-		"snippet": "Web",
-		"bullet": "bullet-1",
-		"imageUrl": "images/corpinfo-thumb.jpg"
+		"snippet": "Website",
+		"imageUrl": "images/corpinfo/corpinfo-thumb.jpg"
 	},
 	{
 		"id": "numberscribe",
 		"title": "Numberscribe",
-		"snippet": "Web",
-		"bullet": "bullet-1",
-		"imageUrl": "images/numberscribe-thumb.jpg"
+		"snippet": "Website",
+		"imageUrl": "images/numberscribe/numberscribe-thumb.jpg"
 	},
 	{
 		"id": "appfolio",
 		"title": "Don't Fear the Auditor",
 		"snippet": "E-Book",
-		"bullet": "bullet-1",
-		"imageUrl": "images/appfolio-thumb.png"
+		"imageUrl": "images/appfolio/appfolio-thumb.png"
 	},
 	{
-		"id": "rare-earth-elements",
-		"title": "Rare Earth Elements",
-		"snippet": "Infographic",
-		"bullet": "bullet-1",
-		"imageUrl": "images/good-element-thumb.png"
+		"id": "powerhouse",
+		"title": "Powerhouse Dynamics",
+		"snippet": "Website",
+		"imageUrl": "images/phd/phd-thumb@2x.jpg"
 	},
 	{
 		"id": "honeywell",
 		"title": "Honeywell",
 		"snippet": "Infographic",
-		"bullet": "bullet-1",
-		"imageUrl": "images/honeywell-thumb.png"
+		"imageUrl": "images/honeywell/honeywell-thumb.png"
 	},
 	{
-		"id": "socially-devoted",
-		"title": "Socially Devoted to You",
+		"id": "ge",
+		"title": "General Electric",
 		"snippet": "Infographic",
-		"bullet": "bullet-1",
-		"imageUrl": "images/demandforce1-thumb.png"
-	},
-	{
-		"id": "domain-nation",
-		"title": "Domain Nation",
-		"snippet": "Infographic",
-		"bullet": "bullet-1",
-		"imageUrl": "images/demandforce2-thumb.png"
+		"imageUrl": "images/ge/ge-thumb.jpg"
 	}
 ]

@@ -4,7 +4,7 @@
 	border-radius: 2px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	font-weight: $bold;
 	@include transition(all 0.3s);
 }
@@ -39,29 +39,17 @@
 .hollow-btn {
 	color: $blue;
 	font-size: 1.4rem;
-	margin-left: -15px;
-	@include respond-to(md-screens) { @include hollow-btn-attr; }
-	@include respond-to(lg-screens) { @include hollow-btn-attr; }
-
-	.fa-chevron-left {
-		float: left;
-		margin-right: 5px;
-	}
-
 }
 
 // Back-to-Top
 
-.cd-top {
+.sticky-top {
 	border-radius: 30px;
-	background: $blue url(../images/cd-top-arrow.svg) no-repeat center 50%;
-	box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
 	opacity: 0;
 	z-index: 999;
-	border: 1px solid #0070A6;
 	visibility: hidden;
 	@include respond-to(sm-screens) { visibility: visible; }
 	@include respond-to(md-screens) { visibility: visible; }
@@ -69,12 +57,17 @@
 	@include transition(all 0.5s);
 
 	&:hover {
-		box-shadow: none;
+		
 	}
 
 	&.cd-is-visible {
 		opacity: 1;
 		@include animation(rubberBand 0.7s ease-in);
+	}
+
+	.fa-chevron-up {
+		@include center;
+		color: $black;
 	}
 }
 
@@ -83,7 +76,6 @@
 .sticky-home {
 	border-radius: 30px;
 	background: white;
-	box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
 	position: fixed;
 	bottom: 30px;
 	left: 30px;
@@ -97,7 +89,7 @@
 	@include transition(all 0.5s);
 
 	&:hover {
-		box-shadow: none;
+		box-shadow: 0px 10px 15px rgba(1,30,30,0.30);
 	}
 
 	&.home-visible {
@@ -114,18 +106,4 @@
 .sticky-btn {
 	height: 60px; 
 	width: 60px;
-}
-
-// Previous & Next Buttons
-
-.previous-btn span, .next-btn span {
-	visibility: hidden;
-	@include respond-to(md-screens) { visibility: visible; }
-	@include respond-to(lg-screens) { visibility: visible; }
-}
-
-.next-btn {
-	right: 15px;
-	@include respond-to(md-screens) { right: 30px; }
-	@include respond-to(lg-screens) { right: 30px; }
 }

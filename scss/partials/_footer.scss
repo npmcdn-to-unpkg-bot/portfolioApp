@@ -1,6 +1,7 @@
 footer {
 	@include outer-container(100%);
 	font-size: 1.4rem;
+	text-align: center;
 
 	.row {
 		@include span-columns(12);
@@ -8,9 +9,6 @@ footer {
 
 	.social {
 		@include span-columns(12 of 12);
-		@include respond-to(sm-screens) { @include span-columns(8 of 12, block-collapse); } 
-		@include respond-to(md-screens) { @include span-columns(8 of 12, block-collapse); }
-		@include respond-to(lg-screens) { @include span-columns(8 of 12, block-collapse); }
 		background-color: $black;
 		padding: 22px 30px;
 		margin-right: 0;
@@ -24,19 +22,29 @@ footer {
 				margin-right: 15px;
 
 				a {
-					color: white;
+					color: $grey;
+					font-weight: $regular;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+
+					&:hover {
+						color: white;
+					}
+
+					.fa {
+						@include respond-to(sm-screens) { display: none; }
+						@include respond-to(md-screens) { display: none; }
+						@include respond-to(lg-screens) { display: none; }
+					}
+
+					.hide {
+						display: none;
+						@include respond-to(sm-screens) { display: inline-block; }
+						@include respond-to(md-screens) { display: inline-block; }
+						@include respond-to(lg-screens) { display: inline-block; }
+					}
 				}
 			}
-		}
-
-		span {
-			float: right;
-			color: white;
-			font-weight: $light;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-			display: none;
-			@include respond-to(all-screens) { display: block; display: inline; }
 		}
 
 		.fa-bolt {

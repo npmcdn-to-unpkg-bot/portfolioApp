@@ -3,8 +3,23 @@
 var portfolioApp = angular.module('portfolioApp', [
 	'ui.router',
 	'ngAnimate',
-	'app.controllers'
+	'app.controllers',
 ]);
+
+portfolioApp.run(['$window', '$rootScope', '$state', function($window, $rootScope, $state) {
+    
+    $rootScope.$on('$viewContentLoaded', function () {
+
+        var interval = setInterval(function () {
+            if (document.readyState == "complete") {
+                window.scrollTo(0, 0);
+                clearInterval(interval);
+            }
+        });
+
+    });
+
+}]);
 
 portfolioApp.config(function($stateProvider, $urlRouterProvider) {
 
@@ -13,17 +28,17 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider
 
 		// route for the home page
-		.state('home', {
-			url: '/',
-			views: {
-				'master': {
-					templateUrl: 'partials/_home.html'
-				}
-			}
-		})
+		// .state('home', {
+		// 	url: '/',
+		// 	views: {
+		// 		'master': {
+		// 			templateUrl: 'partials/_home.html'
+		// 		}
+		// 	}
+		// })
 
 		.state('work', {
-			url: '/work',
+			url: '/',
 			views: {
 				'master': {
 					templateUrl: 'partials/_work.html',
@@ -40,14 +55,14 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
 
 		// child of work
 		.state('work-post', {
-			url: '/work/:workId',
+			url: 'work/:workId',
 			views: {
 				'master': {
 					templateUrl: 'partials/_work-post.html',
 					controller: 'singlePostController'
 				},
 				'navbar@work-post': {
-					templateUrl: 'partials/_secondary-navbar.html'
+					templateUrl: 'partials/_main-navbar.html'
 				},
 				'footer@work-post': {
 					templateUrl: 'partials/_footer.html'
@@ -57,7 +72,17 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
 
 		.state('about', {
 			url: '/about',
-			templateUrl: 'partials/_about.html'
+			views: {
+				'master': {
+					templateUrl: 'partials/_about.html',
+				},
+				'navbar@about': {
+					templateUrl: 'partials/_main-navbar.html'
+				},
+				'footer@about': {
+					templateUrl: 'partials/_footer.html'
+				}
+			}
 		})
 
 		.state('contact', {

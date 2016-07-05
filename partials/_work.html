@@ -2,7 +2,18 @@
 
 <section class="work-jumbotron">
 
-	<h1>Under Construction</h1>
+	<div id="pencil1" class="parallax-layer"></div>
+	<div id="pencil2" class="parallax-layer"></div>
+	
+	<div class="site-container">
+		<div class="intro-element">
+			<h1>Hello, I'm Arturo Wibawa.<br><br>A visual designer from Southern California, welcome to my portfolio.</h1>
+			<div class="scrolly">
+				<div class="mouse"></div>
+				<div class="caption"><h4>Featured Works</h4></div>
+			</div>
+		</div>
+	</div>
 
 </section>
 
@@ -10,18 +21,19 @@
 
 	<div class="row">
 			
-		<article ng-repeat="work in posts">
+		<article  class="work-cards" ng-repeat="work in posts">
 
 			<div class="content">
 
 				<div class="project-thumb">
-					<a ui-sref="work-post({ workId: work.id })"><img class="cover" ng-src="{{work.imageUrl}}"></a>
+					<a ui-sref="work-post({ workId: work.id })">
+					<img height="100%" class="cover" ng-src="{{work.imageUrl}}">
+					</a>
 				</div>
 
 				<div class="description">
-					<span class="circle {{ work.bullet }}"></span>
-					<h4> {{work.snippet}} </h4>
 					<a ui-sref="work-post({ workId: work.id })"><h2> {{work.title}} </h2></a>
+					<h4> {{work.snippet}} </h4>
 				</div>
 
 			</div>
@@ -32,4 +44,45 @@
 
 </section>
 
+<section class="infographics">
+	<h1>Infographics Collection</h1>
+	<h4>– Coming Soon –</h4>
+</section>
+
 <footer id="footerUI" ui-view="footer"></footer>
+
+<script>
+
+	window.sr = ScrollReveal();
+
+	sr.reveal('.work-posts', {
+		origin: 'top',
+		distance: '80px',
+		scale: 1,
+		reset: true,
+		opacity: 1,
+		viewFactor: 0.1,
+		mobile: false,
+	})
+
+	// Create cross browser requestAnimationFrame method:
+	window.requestAnimationFrame = window.requestAnimationFrame
+	 || window.mozRequestAnimationFrame
+	 || window.webkitRequestAnimationFrame
+	 || window.msRequestAnimationFrame
+	 || function(f){setTimeout(f, 1000/60)}
+	 
+	var pencil1 = document.getElementById('pencil1')
+	var pencil2 = document.getElementById('pencil2')
+	 
+	function parallaxpencil(){
+	 var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically 
+	 pencil2.style.top = -scrolltop * .5 + 'px' // move layer1 at 20% of scroll rate
+	 pencil1.style.top = -scrolltop * 1.2 + 'px' // move layer2 at 50% of scroll rate
+	}
+	 
+	window.addEventListener('scroll', function(){ // on page scroll
+	 requestAnimationFrame(parallaxpencil) // call parallaxlayers() on next available screen paint
+	}, false)
+
+</script>

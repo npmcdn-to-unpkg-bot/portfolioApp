@@ -13,7 +13,7 @@ BACK TO TOP BUTTON
 		//duration of the top scrolling animation (in ms)
 		scroll_top_duration = 700,
 		//grab the "back to top" link
-		el = $('.cd-top');
+		el = $('.sticky-top');
 
 	//hide or show the "back to top" link
 	$(window).scroll(function(){
@@ -86,4 +86,11 @@ HIDE HEADER ON SCROLL DOWN
 	    lastScrollTop = st;
 	}
 */
+
+/************************************
+PARALLAXING
+*************************************/
+
 });
+
+

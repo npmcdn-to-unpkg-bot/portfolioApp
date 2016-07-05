@@ -1,172 +1,131 @@
 [
 	{
-		"id": "spaceangels",
-		"header": "Space Angels Network",
-		"type": "Web Design",
-		"description": "Space Angels Network is a global network for angel investors. They are the largest community of space investors and entrepreneurs in the world. This site serves as an online platfrom that allows accredited investors to invest in private aerospace companies through Space Angels Network managed funds.",
-		"client": "Space Angels Network",
-		"link": "http://spaceangelsnetwork.com",
-		"imageUrl":
-			[
-				"images/space-cover.png",
-				"images/icon1.png",
-				"images/icon2.png",
-				"images/icon3.png",
-				"images/icon4.png",
-				"images/san-public-design.png"
-			]
-	},
-	{
-		"id": "buzzaway",
-		"header": "Buzz Away Extreme",
-		"type": "Web Design",
-		"description": "This site is a gateway to purchase the Buzz Away Extreme products. They offer a long-lasting and extremely effective DEET-free repellent. The products can be purchase in selected online stores and some major retail stores.",
-		"client": "Quantum Health",
-		"link": "http://buzzawayextreme.com",
-		"imageUrl":
-			[
-				"images/buzzaway-cover.jpg",
-				"images/buzz-icon1.png",
-				"images/buzz-icon2.png",
-				"images/buzz-icon3.png",
-				"images/buzz-icon4.png",
-				"images/buzzaway-public-design.png"
-			]
-	},
-	{
-		"id": "dwellingz",
-		"header": "Every Home Has a Story",
-		"type": "Web Design",
-		"description": "Landing page design for a startup in the real estate industry. The site serves as a platform for real estate agents to show their listing and takes potential home buyers beyond the facts, stats and square footage. The build features a custom backend editorial tool and and elegant, magazine-quality layout.",
-		"client": "Dwellingz",
-		"link": "http://dwellingz.com",
-		"imageUrl":
-			[
-				"images/dwellingz-cover.jpg",
-				"images/dwellingz-icon1.png",
-				"images/dwellingz-icon2.png",
-				"images/dwellingz-icon3.png",
-				"images/dwellingz-icon4.png",
-				"images/dwellingz-public-design.png"
-			]
-	},
-	{
 		"id": "corpinfo",
 		"header": "Cloud is the New Normal",
 		"type": "Web Design",
-		"description": "CorpInfo is a leading technology firm providing Cloud, Consulting Services, Infrastructure Solutions, and Managed Services. The site is build on a custom Wordpress, that serves as an information hub for potential customers. The goal is to drive more conversion from the site through their contact form.",
+		"description": "CorpInfo is a leading technology firm providing Cloud, Consulting Services, Infrastructure Solutions, and Managed Services. The site is build on a custom Wordpress, which serves as an information hub for potential customers. The challenge is to restructure their content to be more easiliy navigated and digested. The final outcome for this project is to increase Corpinfo's brand image as a partner to solve business IT challenges.",
+		"approach": "I was task to do a total redesign of the corporate website. The first step was to define the pain points and how to restructure the site to be more relevant in SaaS industry. I had to deliver several wireframes and mock ups to present my ideas on the best approach. The final result is to have a fresh new look for the corporate site and give Corpinfo an advantage over its competitors.",
 		"client": "CorpInfo",
 		"link": "http://corpinfo.com",
 		"imageUrl":
 			[
-				"images/corpinfo-cover.jpg",
-				"images/corpinfo-icon1.png",
-				"images/corpinfo-icon2.png",
-				"images/corpinfo-icon3.png",
-				"images/corpinfo-icon4.png",
-				"images/corpinfo-public-design.jpg"
+				"images/corpinfo/corpinfo-cover.jpg",
+				"images/corpinfo/corpinfo-photo-intro@2x.jpg",
+				"images/corpinfo/corpinfo-wireframes-01@2x.jpg",
+				"images/corpinfo/corpinfo-wireframes-02@2x.jpg",
+				"images/corpinfo/corpinfo-wireframes-03@2x.jpg",
+				"images/corpinfo/corpinfo-colors@2x.jpg",
+				"images/corpinfo/corpinfo-font-01@2x.jpg",
+				"images/corpinfo/corpinfo-font-02@2x.jpg",
+				"images/corpinfo/corpinfo-result-01@2x.jpg",
+				"images/corpinfo/corpinfo-result-02@2x.jpg"
 			]
 	},
 	{
 		"id": "numberscribe",
 		"header": "Making Charts has Never Been Easier",
 		"type": "Web Design",
-		"description": "Numberscrie wants to help people build the most visually arresting charts possible. My job was to work magic on the front end and design. I was able to work with their talented team to help bring their vision to life.",
+		"description": "Numberscribe wanted a new marketing site for their start-up brand. My responsibility was to come up with a concept and visualization for the front-end design as well as providing assets for the web application. I was able to work with the co-founders and help bring their vision to reality.",
+		"approach": "I worked closely with the creative director to create a new site around a larger brand experience that better communicates to a broader target audience. The new site embodies the attributes of quality, authenticity, and approachability.",
 		"client": "Numberscribe",
 		"link": "http://numberscribe.com",
 		"imageUrl":
 			[
-				"images/numberscribe-cover.png",
-				"images/numberscribe-icon1.png",
-				"images/numberscribe-icon2.png",
-				"images/numberscribe-icon3.png",
-				"images/numberscribe-icon4.png",
-				"images/numberscribe-public-design.png"
+				"images/numberscribe/numberscribe-cover.png",
+				"images/numberscribe/ns-photo-intro@2x.png",
+				"images/numberscribe/ns-process-01@2x.jpg",
+				"images/numberscribe/ns-process-02@2x.jpg",
+				"images/numberscribe/ns-process-03@2x.jpg",
+				"images/numberscribe/ns-colors@2x.jpg",
+				"images/numberscribe/ns-font-01@2x.jpg",
+				"images/numberscribe/ns-font-02@2x.jpg",
+				"images/numberscribe/ns-result-01@2x.jpg"
 			]
 	},
 	{
 		"id": "appfolio",
 		"header": "Auditors Aren't Enemies",
 		"type": "E-Book",
-		"description": "Audits can seem overwhelming. If you know what to expect and follow best practices, you can avoid a world of stress. It’s important to understand that audits are done with the intention of making sure your property management business complies with local real estate regulations and accounting principles.",
+		"description": "Column Five Media commissioned me to design an E-Book for Appfolio. The project consist of mostly illustrations and layout design.",
+		"approach": "I had to create a visual identity that would best illustrate the book's material. Appfolio is an online property management software that provides free, valuable education to their customers. I want the reader to understand that Appfolio is professional and the best at what they do.",
 		"client": "Appfolio",
-		"link": "http://www.appfolio.com/blog/2015/01/dont-fear-the-auditor-audit-proof-your-property-management-business-in-3-easy-steps/",
+		"link": "http://appfolio.uberflip.com/i/414567-audit-proof-your-property-management-business-in-3-easy-steps",
 		"imageUrl":
 			[
-				"images/appfolio-cover.png",
-				"images/appfolio-icon1.png",
-				"images/appfolio-icon2.png",
-				"images/appfolio-icon3.png",
-				"images/appfolio-icon4.png",
-				"images/appfolio-public-design.png"
+				"images/appfolio/appfolio-cover.png",
+				"images/appfolio/appfolio-photo-intro@2x.jpg",
+				"images/appfolio/appfolio-process-01@2x.jpg",
+				"images/appfolio/appfolio-process-02@2x.jpg",
+				"images/appfolio/appfolio-process-03@2x.jpg",
+				"images/appfolio/appfolio-colors@2x.jpg",
+				"images/appfolio/appfolio-font-01@2x.jpg",
+				"images/appfolio/appfolio-font-02@2x.jpg",
+				"images/appfolio/appfolio-result@2x.png"
 			]
 	},
 	{
-		"id": "rare-earth-elements",
-		"header": "Rare Earth Elements",
-		"type": "Infographic",
-		"description": "There are currently 17 rare earth elements (REE). Although relatively abundant, rare earth deposits take longer to find because they aren’t as concentrated in areas as other elements. This Infographic illustrate the story.",
-		"client": "Good Magazine collaboration with Column Five",
-		"link": "https://magazine.good.is/infographics/infographic-the-future-global-supply-of-rare-earth-elements",
+		"id": "powerhouse",
+		"header": "Enterprise Enery Efficiency",
+		"type": "Web Design",
+		"description": "Powerhouse Dynamics is the developer of SiteSage, a revolutionary platform that enables asset and energy management for portfolios of small facilities. They wanted a fresh new look of their outdated website that caters to their existing and future customers.",
+		"approach": "My first step was to define the list of pain points. First, it needs to inform customers the value of SiteSage as well as a way to educate them through whitepapers and webinars. I worked closely with the marketing director to plan and strategize the new sitemap and re-directing content to the approriate channels.",
+		"client": "Powerhouse Dynamics",
+		"link": "https://powerhousedynamics.com/",
 		"imageUrl":
 			[
-				"images/good-element-cover.png",
-				"images/good-element-icon1.png",
-				"images/good-element-icon2.png",
-				"images/good-element-icon3.png",
-				"images/good-element-icon4.png",
-				"images/good-element-public-design.png"
+				"images/phd/phd-cover.jpg",
+				"images/phd/phd-intro@2x.jpg",
+				"images/phd/phd-process-01@2x.jpg",
+				"images/phd/phd-process-02@2x.jpg",
+				"images/phd/phd-process-03@2x.jpg",
+				"images/phd/phd-colors@2x.jpg",
+				"images/phd/phd-font-01@2x.jpg",
+				"images/phd/phd-font-02@2x.jpg",
+				"images/phd/phd-result@2x.jpg"
+
 			]
 	},
 	{
 		"id": "honeywell",
-		"header": "Cyber Security: A Perfect Storm",
+		"header": "Cyber Security",
 		"type": "Infographic",
-		"description": "As companies and industries increasingly rely on technology, security risks become greater. With growing numbers of Windows machines and increased scarcity of skilled technical resources, a “perfect storm” of cyber threats in production facilities is looming. Check out the infographic below.",
-		"client": "Honeywell collaboration with Column Five",
+		"description": "I was task to create an infographic for Honeywell with the topic of cyber security. The challenge was to piece together a text brief into an illustrative storytelling.",
+		"approach": "I had to conceptualize an illustration style that can tell the story in a captivating way.",
+		"client": "Honeywell",
 		"link": "https://www.honeywellprocess.com/library/marketing/brochures/honeywell-industrial-IT-solutions-infographics.pdf",
 		"imageUrl":
 			[
-				"images/honeywell-cover.png",
-				"images/honeywell-icon1.png",
-				"images/honeywell-icon2.png",
-				"images/honeywell-icon3.png",
-				"images/honeywell-icon4.png",
-				"images/honeywell-public-design.png"
+				"images/honeywell/honeywell-cover.png",
+				"images/honeywell/honeywell-intro@2x.jpg",
+				"images/honeywell/honeywell-process-01@2x.jpg",
+				"images/honeywell/honeywell-process-02@2x.jpg",
+				"images/honeywell/honeywell-process-03@2x.jpg",
+				"images/honeywell/honeywell-colors@2x.jpg",
+				"images/honeywell/honeywell-font-01@2x.jpg",
+				"images/honeywell/honeywell-font-02@2x.jpg",
+				"images/honeywell/honeywell-result@2x.jpg"
 			]
 	},
 	{
-		"id": "socially-devoted",
-		"header": "Socially Devoted to You",
+		"id": "ge",
+		"header": "Critical Power",
 		"type": "Infographic",
-		"description": "It’s one thing to simply set up a Facebook Page for your business, but it’s another to actively engage customers in conversation, respond to feedback or questions, and be socially devoted to your fan base. Take a look at this chart highlighting the major advantages of being socially engaged to your customers, and learn 5 great ways you can stay committed to your customers.",
-		"client": "Demandforce collaboration with Column Five",
-		"link": "http://www.demandforce.com/resources/socially-devoted-to-you-what-is-the-roi-of-being-attentive-to-your-customers/",
+		"description": "General Electric needed a way to tell a story on their energy management systems. My task was to create a visualization of data systems, servers and custom icons.",
+		"approach": "Build a layout around the given copy and visualize the story in a meaningful way.",
+		"client": "General Electric",
+		"link": "https://www.geindustrial.com/sites/geis/files/gallery/GE_CP_InfoGraph.pdf",
 		"imageUrl":
 			[
-				"images/demandforce1-cover.png",
-				"images/demandforce1-icon1.png",
-				"images/demandforce1-icon2.png",
-				"images/demandforce1-icon3.png",
-				"images/demandforce1-icon4.png",
-				"images/demandforce1-public-design.png"
-			]
-	},
-	{
-		"id": "domain-nation",
-		"header": "New World Domain Nation",
-		"type": "Infographic",
-		"description": "Until recently, the Internet’s generic top-level domain naming space has remained a mostly closed system. It currently has only 22 variations, including the familiar “.com” and “.net” domain extensions. This infographic touched on the different level domains and hot it effects the world.",
-		"client": "Demandforce collaboration with Column Five",
-		"link": "https://dribbble.com/shots/710065-New-World-Domain-Nation",
-		"imageUrl":
-			[
-				"images/demandforce2-cover.png",
-				"images/demandforce2-icon1.png",
-				"images/demandforce2-icon2.png",
-				"images/demandforce2-icon3.png",
-				"images/demandforce2-icon4.png",
-				"images/demandforce2-public-design.png"
+				"images/ge/ge-cover.jpg",
+				"images/ge/ge-intro@2x.jpg",
+				"images/ge/ge-process-01@2x.jpg",
+				"images/ge/ge-process-02@2x.jpg",
+				"images/ge/ge-process-03@2x.jpg",
+				"images/ge/ge-colors@2x.jpg",
+				"images/ge/ge-font-01@2x.jpg",
+				"images/ge/ge-font-02@2x.jpg",
+				"images/ge/ge-result@2x.png"
+
 			]
 	}
 ]

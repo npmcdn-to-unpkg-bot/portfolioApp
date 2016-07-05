@@ -6,13 +6,32 @@ section.work-post-jumbotron {
 	z-index: -999;
 	@include respond-to(md-screens) { position: fixed; top: 0; left: 0; height: 500px; width: 100%; margin-top: 0; }
 	@include respond-to(lg-screens) { position: fixed; top: 0; left: 0; height: 500px; width: 100%; margin-top: 0; }
-	@include respond-to(xl-screens) { position: fixed; top: 0; left: 50%; height: 500px; width: 100%; margin-top: 0; margin-left: -($max-width/2); }
-
-	h1 {
+	@include respond-to(xl-screens) { position: fixed; top: 0; height: 500px; width: 100%; margin-top: 0; }
+	
+	.site-container {
+		@include outer-container(100%);
 		@include center;
 		width: 90%;
-		@include respond-to(md-screens) { margin-top: 40px }
-		@include respond-to(lg-screens) { margin-top: 42.5px }
+
+		h1 {
+			font-size: 3rem;
+			@include animation(entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s backwards);
+			@include respond-to(sm-screens) { font-size: 4rem; }
+			@include respond-to(md-screens) { font-size: 5rem; margin-top: 80px; }
+			@include respond-to(lg-screens) { font-size: 5rem; margin-top: 80px; }
+		}
+
+		h2 {
+			@include animation(entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.7s backwards);
+			color: #fff;
+			margin-top: 5px;
+			text-transform: uppercase;
+			font-size: 1rem;
+			letter-spacing: 2px;
+			@include respond-to(sm-screens) { font-size: 1.2rem; }
+			@include respond-to(md-screens) { font-size: 1.4rem; }
+			@include respond-to(lg-screens) { font-size: 1.6rem; }
+		}
 	}
 
 	img {
@@ -24,8 +43,7 @@ section.work-post-jumbotron {
 section.work-description {
 	@include outer-container(100%);
 	background-color: white;
-	padding: 15px;
-	border-bottom: $grey-border;
+	padding: 30px;
 	@include transition(all 0.3s 0.2s);
 	
 	@include respond-to(sm-screens) { padding: 30px; }
@@ -33,70 +51,79 @@ section.work-description {
 	@include respond-to(lg-screens) { margin-top: 500px; padding-top: 30px; padding-bottom: 30px; }
 
 	.site-container {
-		max-width: 1170px;
-		margin: auto;
+		@include outer-container($max-width);
 	}
 
 	.row {
 		@include span-columns(12 of 12);
 
-		.quarter {
-			width: 100%;
-			float: left;
-			@include respond-to(md-screens) { width: 2 / 12 * 100%; padding-left: 15px; padding-right: 15px; }
-			@include respond-to(lg-screens) { width: 2 / 12 * 100%; padding-left: 15px; padding-right: 15px; }
+		.two {
+			@include span-columns(12 of 12);
+			@include respond-to(md-screens) { @include span-columns(2 of 12); }
+			@include respond-to(lg-screens) { @include span-columns(2 of 12); }
 
 			.fa-chevron-right {
 				@include respond-to(md-screens) { display: none; }
 			}
 		}
 
-		.half {
-			width: 100%;
-			float: left;
-			@include respond-to(md-screens) { width: 6 / 12 * 100%; }
-			@include respond-to(lg-screens) { width: 6 / 12 * 100%; }
+		.eight {
+			@include span-columns(12 of 12);
+			@include respond-to(md-screens) { @include span-columns(8 of 12); }
+			@include respond-to(lg-screens) { @include span-columns(8 of 12); }
 		}
 	}
 }
 
-section.work-images {
+section.case-study {
 	@include outer-container(100%);
-	background-color: $bg-color;
-
+	background-color: #fff;
+	padding-top: 5em;
+	
 	img {
 		width: 100%;
 		margin-bottom: -3px;
 	}
 
 	.site-container {
-		max-width: 1170px;
-		margin: auto;
+		@include outer-container($max-width);
 	}
 
 	.row {
 		@include span-columns(12 of 12);
 
-		.full {
-			width: 100%;
-			// @include respond-to(sm-screens) { padding: 30px; }
-			// @include respond-to(md-screens) { padding: 30px; }
-			// @include respond-to(lg-screens) { padding: 60px; }
-
-			img {
-				// border-radius: 2px;
-				// box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
-				// @include respond-to(sm-screens) { border-radius: 4px; }
-				// @include respond-to(md-screens) { border-radius: 4px; }
-				// @include respond-to(lg-screens) { border-radius: 4px; }
-			}
+		section.twelve {
+			@include span-columns(12 of 12);
+			@include pad(default 0);
 		}
-		.half {
-			width: 100%;
-			float: left;
-			@include respond-to(sm-screens) { width: 50%; }
-			@include respond-to(md-screens) { width: 50%; }
-			@include respond-to(lg-screens) { width: 25%; }
+		section.top-pad {
+			@include pad(0 0 default 0);
+		}
+		section.six {
+			@include span-columns(12 of 12);
+			@include pad(default 0 default 0);
+			@include respond-to(all-screens) { @include span-columns(6); @include omega(2n); @include pad(0 0 default 0); }
+		}
+	}
+
+	.row.offset {
+		@include span-columns(12);
+		padding: 6em 3em;
+		@include respond-to(all-screens) { padding: 6em 6em; }
+		text-align: center;
+
+		h3 {
+			margin-top: 15px;
+		}
+
+		.back-home {
+			width: auto;
+			margin: 20px 15px 0 15px;
+		}
+
+		a.previous-btn span.hide, a.next-btn span.hide {
+			display: none;
+			@include respond-to(all-screens) { display: inline-block; }
 		}
 	}
 }
