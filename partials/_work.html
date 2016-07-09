@@ -1,16 +1,15 @@
-<nav id="navbarUI" ui-view="navbar"></nav>
-
 <section class="work-jumbotron">
 
-	<div id="pencil1" class="parallax-layer"></div>
-	<div id="pencil2" class="parallax-layer"></div>
+	<div id="polygon1" class="parallax-layer"></div>
+	<div id="polygon2" class="parallax-layer"></div>
+	<div id="polygon3" class="parallax-layer"></div>
 	
 	<div class="site-container">
 		<div class="intro-element">
 			<h1>Hello, I'm Arturo Wibawa.<br><br>A visual designer from Southern California, welcome to my portfolio.</h1>
 			<div class="scrolly">
 				<div class="mouse"></div>
-				<div class="caption"><h4>Featured Works</h4></div>
+				<div class="caption"><h4>Featured Work</h4></div>
 			</div>
 		</div>
 	</div>
@@ -45,11 +44,9 @@
 </section>
 
 <section class="infographics">
-	<h1>Infographics Collection</h1>
-	<h4>– Coming Soon –</h4>
+	<h1>Infographics Work</h1>
+	<a class="btn solid-btn back-home" ui-sref="infographics">View collection</a>
 </section>
-
-<footer id="footerUI" ui-view="footer"></footer>
 
 <script>
 
@@ -72,17 +69,19 @@
 	 || window.msRequestAnimationFrame
 	 || function(f){setTimeout(f, 1000/60)}
 	 
-	var pencil1 = document.getElementById('pencil1')
-	var pencil2 = document.getElementById('pencil2')
+	var polygon1 = document.getElementById('polygon1')
+	var polygon2 = document.getElementById('polygon2')
+	var polygon3 = document.getElementById('polygon3')
 	 
-	function parallaxpencil(){
+	function parallaxpolygon(){
 	 var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically 
-	 pencil2.style.top = -scrolltop * .5 + 'px' // move layer1 at 20% of scroll rate
-	 pencil1.style.top = -scrolltop * 1.2 + 'px' // move layer2 at 50% of scroll rate
+	 polygon1.style.top = -scrolltop * .2 + 'px' // move layer1 at 20% of scroll rate
+	 polygon2.style.top = -scrolltop * .6 + 'px' // move layer2 at 50% of scroll rate
+	 polygon3.style.top = -scrolltop * .4 + 'px'
 	}
 	 
 	window.addEventListener('scroll', function(){ // on page scroll
-	 requestAnimationFrame(parallaxpencil) // call parallaxlayers() on next available screen paint
+	 requestAnimationFrame(parallaxpolygon) // call parallaxlayers() on next available screen paint
 	}, false)
 
 </script>

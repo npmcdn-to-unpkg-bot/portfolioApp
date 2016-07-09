@@ -469,13 +469,10 @@ h4 {
     transform: translateY(2px); } }
 
 [ui-view].ng-enter, [ui-view].ng-leave {
-  position: absolute;
-  left: 0;
-  right: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out; }
 
 [ui-view].ng-enter {
   opacity: 0; }
@@ -716,22 +713,46 @@ nav {
     .nav-up {
       top: -80px; } }
 
-section .work-jumbotron {
+section.work-jumbotron {
   background: white;
   max-width: 100%;
   min-height: 100%;
   height: 100vh;
-  border-bottom: 1px solid #e2e2e2;
-  overflow: hidden; }
-  section .work-jumbotron .site-container {
+  border-bottom: 1px solid #e2e2e2; }
+  section.work-jumbotron .parallax-layer {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    visibility: hidden; }
+    @media only screen and (min-width: 992px) and (max-width: 1400px) {
+      section.work-jumbotron .parallax-layer {
+        visibility: visible; } }
+    @media only screen and (min-width: 1400px) {
+      section.work-jumbotron .parallax-layer {
+        visibility: visible; } }
+  section.work-jumbotron #polygon1 {
+    z-index: 2;
+    background: url(../images/polygon1.png) 90% 80% no-repeat;
+    background-size: 20%; }
+  section.work-jumbotron #polygon2 {
+    background: url(../images/polygon2.png) 5% 80% no-repeat;
+    background-size: 20%; }
+  section.work-jumbotron #polygon3 {
+    z-index: 2;
+    background: url(../images/polygon3.png) 55% 25% no-repeat;
+    background-size: 10%; }
+  section.work-jumbotron .site-container {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto; }
-    section .work-jumbotron .site-container::after {
+    section.work-jumbotron .site-container::after {
       clear: both;
       content: "";
       display: table; }
-  section .work-jumbotron .intro-element {
+  section.work-jumbotron .intro-element {
     max-width: 1170px;
     margin: auto;
     position: absolute;
@@ -742,9 +763,9 @@ section .work-jumbotron {
     opacity: 1;
     text-align: center; }
     @media only screen and (min-width: 1400px) {
-      section .work-jumbotron .intro-element {
+      section.work-jumbotron .intro-element {
         padding: 0; } }
-    section .work-jumbotron .intro-element h1 {
+    section.work-jumbotron .intro-element h1 {
       -webkit-animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1);
       -moz-animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1);
       animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1);
@@ -756,22 +777,22 @@ section .work-jumbotron {
       transition: all 0.3s ease-in-out;
       width: 100%; }
       @media only screen and (min-width: 768px) and (max-width: 992px) {
-        section .work-jumbotron .intro-element h1 {
+        section.work-jumbotron .intro-element h1 {
           font-size: 4rem; } }
       @media only screen and (min-width: 992px) and (max-width: 1400px) {
-        section .work-jumbotron .intro-element h1 {
+        section.work-jumbotron .intro-element h1 {
           font-size: 5rem; } }
       @media only screen and (min-width: 1400px) {
-        section .work-jumbotron .intro-element h1 {
+        section.work-jumbotron .intro-element h1 {
           font-size: 5rem; } }
-    section .work-jumbotron .intro-element .scrolly {
+    section.work-jumbotron .intro-element .scrolly {
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0);
       text-align: center;
       margin-top: 80px;
       width: 100%; }
-      section .work-jumbotron .intro-element .scrolly .mouse {
+      section.work-jumbotron .intro-element .scrolly .mouse {
         -webkit-animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s backwards;
         -moz-animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s backwards;
         animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.2s backwards;
@@ -782,7 +803,7 @@ section .work-jumbotron {
         border: 2px solid #BEC9CE;
         text-align: center;
         margin-bottom: 10px; }
-        section .work-jumbotron .intro-element .scrolly .mouse:after {
+        section.work-jumbotron .intro-element .scrolly .mouse:after {
           display: inline-block;
           height: 6px;
           width: 6px;
@@ -792,12 +813,12 @@ section .work-jumbotron {
           -webkit-animation: scroll 1.3s ease-out infinite forwards;
           -moz-animation: scroll 1.3s ease-out infinite forwards;
           animation: scroll 1.3s ease-out infinite forwards; }
-      section .work-jumbotron .intro-element .scrolly .caption {
+      section.work-jumbotron .intro-element .scrolly .caption {
         -webkit-animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.4s backwards;
         -moz-animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.4s backwards;
         animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.4s backwards; }
 
-section .work-posts {
+section.work-posts {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
@@ -805,95 +826,95 @@ section .work-posts {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-  section .work-posts::after {
+  section.work-posts::after {
     clear: both;
     content: "";
     display: table; }
   @media only screen and (min-width: 420px) and (max-width: 768px) {
-    section .work-posts {
+    section.work-posts {
       padding: 15px; } }
   @media only screen and (min-width: 768px) and (max-width: 992px) {
-    section .work-posts {
+    section.work-posts {
       padding: 20px; } }
   @media only screen and (min-width: 992px) and (max-width: 1400px) {
-    section .work-posts {
+    section.work-posts {
       padding: 15px 30px; } }
   @media only screen and (min-width: 1400px) {
-    section .work-posts {
+    section.work-posts {
       padding: 15px 0px; } }
-  section .work-posts .row {
+  section.work-posts .row {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    section .work-posts .row:last-child {
+    section.work-posts .row:last-child {
       margin-right: 0; }
     @media only screen and (min-width: 420px) and (max-width: 768px) {
-      section .work-posts .row {
+      section.work-posts .row {
         margin-bottom: -15px; } }
     @media only screen and (min-width: 768px) and (max-width: 992px) {
-      section .work-posts .row {
+      section.work-posts .row {
         margin-bottom: -20px; } }
-    section .work-posts .row article {
+    section.work-posts .row article {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 100%; }
-      section .work-posts .row article:last-child {
+      section.work-posts .row article:last-child {
         margin-right: 0; }
       @media only screen and (min-width: 420px) and (max-width: 768px) {
-        section .work-posts .row article {
+        section.work-posts .row article {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 48.82117%;
           padding: 0px 0px 15px 0px; }
-          section .work-posts .row article:last-child {
+          section.work-posts .row article:last-child {
             margin-right: 0; }
-          section .work-posts .row article:nth-child(2n) {
+          section.work-posts .row article:nth-child(2n) {
             margin-right: 0; }
-          section .work-posts .row article:nth-child(2n+1) {
+          section.work-posts .row article:nth-child(2n+1) {
             clear: left; } }
       @media only screen and (min-width: 768px) and (max-width: 992px) {
-        section .work-posts .row article {
+        section.work-posts .row article {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 48.82117%;
           padding: 0px 0px 20px 0px; }
-          section .work-posts .row article:last-child {
+          section.work-posts .row article:last-child {
             margin-right: 0; }
-          section .work-posts .row article:nth-child(2n) {
+          section.work-posts .row article:nth-child(2n) {
             margin-right: 0; }
-          section .work-posts .row article:nth-child(2n+1) {
+          section.work-posts .row article:nth-child(2n+1) {
             clear: left; } }
       @media only screen and (min-width: 992px) and (max-width: 1400px) {
-        section .work-posts .row article {
+        section.work-posts .row article {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 31.76157%;
           padding: 15px 0px 15px 0px; }
-          section .work-posts .row article:last-child {
+          section.work-posts .row article:last-child {
             margin-right: 0; }
-          section .work-posts .row article:nth-child(3n) {
+          section.work-posts .row article:nth-child(3n) {
             margin-right: 0; }
-          section .work-posts .row article:nth-child(3n+1) {
+          section.work-posts .row article:nth-child(3n+1) {
             clear: left; } }
       @media only screen and (min-width: 1400px) {
-        section .work-posts .row article {
+        section.work-posts .row article {
           float: left;
           display: block;
           margin-right: 2.35765%;
           width: 31.76157%;
           padding: 15px 0px 15px 0px; }
-          section .work-posts .row article:last-child {
+          section.work-posts .row article:last-child {
             margin-right: 0; }
-          section .work-posts .row article:nth-child(3n) {
+          section.work-posts .row article:nth-child(3n) {
             margin-right: 0; }
-          section .work-posts .row article:nth-child(3n+1) {
+          section.work-posts .row article:nth-child(3n+1) {
             clear: left; } }
-      section .work-posts .row article .content {
+      section.work-posts .row article .content {
         height: auto;
         overflow: hidden;
         border-radius: 2px;
@@ -902,7 +923,7 @@ section .work-posts {
         -moz-transition: all 0.3s ease;
         transition: all 0.3s ease; }
         @media only screen and (min-width: 420px) {
-          section .work-posts .row article .content:hover {
+          section.work-posts .row article .content:hover {
             box-shadow: 0px 20px 25px rgba(1, 30, 30, 0.2);
             -webkit-transform: translateY(-5px);
             -moz-transform: translateY(-5px);
@@ -914,18 +935,18 @@ section .work-posts {
             -ms-transform: scale(1.03);
             -o-transform: scale(1.03);
             transform: scale(1.03); } }
-        section .work-posts .row article .content .project-thumb img {
+        section.work-posts .row article .content .project-thumb img {
           width: 100%; }
-        section .work-posts .row article .content .description {
+        section.work-posts .row article .content .description {
           background: white;
           margin-top: -3px;
           padding: 15px; }
-          section .work-posts .row article .content .description h2 {
+          section.work-posts .row article .content .description h2 {
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
             padding-bottom: 2px; }
-          section .work-posts .row article .content .description h4 {
+          section.work-posts .row article .content .description h4 {
             margin-bottom: 0; }
 
 section.infographics {
@@ -941,7 +962,7 @@ section.infographics {
     padding: 0 30px;
     font-size: 3rem;
     line-height: 120%;
-    margin-bottom: 5px; }
+    margin-bottom: 10px; }
     @media only screen and (min-width: 768px) and (max-width: 992px) {
       section.infographics h1 {
         font-size: 4rem; } }
@@ -951,6 +972,8 @@ section.infographics {
     @media only screen and (min-width: 1400px) {
       section.infographics h1 {
         font-size: 5rem; } }
+  section.infographics .solid-btn {
+    width: auto; }
 
 section.work-post-jumbotron {
   max-width: 100%;
@@ -1298,6 +1321,89 @@ section.site-container {
         background-color: #28323B; }
       section.site-container .right-column .exp-sections h2 {
         font-size: 3rem; }
+
+section.infographics-jumbotron {
+  width: 100%;
+  height: auto;
+  padding: 80px 0px;
+  margin-top: 53px;
+  background: #28323B url(../images/infographic-header.png) no-repeat center;
+  background-size: cover;
+  text-align: center; }
+  @media only screen and (min-width: 420px) and (max-width: 768px) {
+    section.infographics-jumbotron {
+      padding: 100px 0px; } }
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    section.infographics-jumbotron {
+      padding: 100px 0px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1400px) {
+    section.infographics-jumbotron {
+      padding: 150px 0px;
+      margin-top: 80px; } }
+  @media only screen and (min-width: 1400px) {
+    section.infographics-jumbotron {
+      padding: 150px 0px;
+      margin-top: 80px; } }
+  section.infographics-jumbotron .site-container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto; }
+    section.infographics-jumbotron .site-container::after {
+      clear: both;
+      content: "";
+      display: table; }
+  section.infographics-jumbotron h1 {
+    color: #fff;
+    font-size: 3rem;
+    -webkit-animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s backwards;
+    -moz-animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s backwards;
+    animation: entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s backwards; }
+    @media only screen and (min-width: 420px) and (max-width: 768px) {
+      section.infographics-jumbotron h1 {
+        font-size: 4rem; } }
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      section.infographics-jumbotron h1 {
+        font-size: 4rem; } }
+    @media only screen and (min-width: 992px) and (max-width: 1400px) {
+      section.infographics-jumbotron h1 {
+        font-size: 5rem; } }
+    @media only screen and (min-width: 1400px) {
+      section.infographics-jumbotron h1 {
+        font-size: 5rem; } }
+  section.infographics-jumbotron h4 {
+    margin-top: 10px; }
+
+section.infographics-grid {
+  background: #28323B;
+  padding: 0px 15px 30px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  section.infographics-grid .grid {
+    max-width: 1170px;
+    margin: auto; }
+    section.infographics-grid .grid:after {
+      content: '';
+      display: block;
+      clear: both; }
+  section.infographics-grid .grid-sizer, section.infographics-grid .grid-item {
+    width: calc(100% - 15px); }
+    @media only screen and (min-width: 420px) and (max-width: 768px) {
+      section.infographics-grid .grid-sizer, section.infographics-grid .grid-item {
+        width: calc(50% - 15px); } }
+    @media only screen and (min-width: 768px) and (max-width: 992px) {
+      section.infographics-grid .grid-sizer, section.infographics-grid .grid-item {
+        width: calc(50% - 15px); } }
+    @media only screen and (min-width: 992px) and (max-width: 1400px) {
+      section.infographics-grid .grid-sizer, section.infographics-grid .grid-item {
+        width: calc(33.33% - 15px); } }
+    @media only screen and (min-width: 1400px) {
+      section.infographics-grid .grid-sizer, section.infographics-grid .grid-item {
+        width: calc(33.33% - 15px); } }
+  section.infographics-grid .grid-item {
+    height: auto;
+    float: left;
+    margin-bottom: 12px; }
+    section.infographics-grid .grid-item img {
+      width: 100%; }
 
 footer {
   max-width: 100%;

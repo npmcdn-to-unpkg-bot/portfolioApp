@@ -1,0 +1,66 @@
+section.infographics-jumbotron {
+	width: 100%;
+	height: auto;
+	padding: 80px 0px;
+	margin-top: 53px;
+	background: $black url(../images/infographic-header.png) no-repeat center;
+	background-size: cover;
+	text-align: center;
+	@include respond-to(xs-screens) { padding: 100px 0px; }
+	@include respond-to(sm-screens) { padding: 100px 0px; }
+	@include respond-to(md-screens) { padding: 150px 0px; margin-top: 80px; }
+	@include respond-to(lg-screens) { padding: 150px 0px; margin-top: 80px; }
+
+	.site-container {
+		@include outer-container($max-width);
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 3rem;
+		@include animation(entry 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.5s backwards);
+		@include respond-to(xs-screens) { font-size: 4rem; }
+		@include respond-to(sm-screens) { font-size: 4rem; }
+		@include respond-to(md-screens) { font-size: 5rem; }
+		@include respond-to(lg-screens) { font-size: 5rem; }
+	}
+	h4 {
+		margin-top: 10px;
+	}
+}
+
+section.infographics-grid {
+	background: $black;
+	padding: 0px 15px 30px 30px;
+	border-bottom: 1px solid rgba(255,255,255,0.1);
+
+	.grid {
+		max-width: $max-width;
+		margin: auto;
+	
+		// clearfix
+		&:after {
+			content:'';
+			display: block;
+			clear: both;
+		}
+	}
+
+	.grid-sizer, .grid-item {
+		width: calc(100% - 15px);
+		@include respond-to(xs-screens) { width: calc(50% - 15px); }
+		@include respond-to(sm-screens) { width: calc(50% - 15px); }
+		@include respond-to(md-screens) { width: calc(33.33% - 15px); }
+		@include respond-to(lg-screens) { width: calc(33.33% - 15px); }
+	}
+
+	.grid-item {
+		height: auto;
+		float: left;
+		margin-bottom: 12px;
+
+		img {
+			width: 100%;
+		}
+	}
+}

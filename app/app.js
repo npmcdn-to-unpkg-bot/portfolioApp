@@ -6,36 +6,28 @@ var portfolioApp = angular.module('portfolioApp', [
 	'app.controllers',
 ]);
 
-portfolioApp.run(['$window', '$rootScope', '$state', function($window, $rootScope, $state) {
-    
-    $rootScope.$on('$viewContentLoaded', function () {
+portfolioApp.run(['$window', '$rootScope', '$state', '$location', function($window, $rootScope, $state, $location) {
 
-        var interval = setInterval(function () {
-            if (document.readyState == "complete") {
-                window.scrollTo(0, 0);
-                clearInterval(interval);
-            }
-        });
+	// initialise google analytics
+    $window.ga('create', 'UA-67776020-2', 'auto');
 
+    // record page view on each state change
+    $rootScope.$on('$stateChangeSuccess', function (event) {
+        $window.ga('send', 'pageview', $location.path());
     });
+
+	// window scroll to top on page reload
+    $rootScope.$on('$stateChangeSuccess', function() {
+   		document.body.scrollTop = document.documentElement.scrollTop = 0;
+	});
 
 }]);
 
-portfolioApp.config(function($stateProvider, $urlRouterProvider) {
+portfolioApp.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 
 	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
-
-		// route for the home page
-		// .state('home', {
-		// 	url: '/',
-		// 	views: {
-		// 		'master': {
-		// 			templateUrl: 'partials/_home.html'
-		// 		}
-		// 	}
-		// })
 
 		.state('work', {
 			url: '/',
@@ -44,53 +36,67 @@ portfolioApp.config(function($stateProvider, $urlRouterProvider) {
 					templateUrl: 'partials/_work.html',
 					controller: 'postController'
 				},
-				'navbar@work': {
+				'navbar': {
 					templateUrl: 'partials/_main-navbar.html'
 				},
-				'footer@work': {
+				'footer': {
 					templateUrl: 'partials/_footer.html'
 				}
 			}
 		})
 
-		// child of work
 		.state('work-post', {
-			url: 'work/:workId',
+			url: '/work/:workId',
 			views: {
 				'master': {
 					templateUrl: 'partials/_work-post.html',
 					controller: 'singlePostController'
 				},
-				'navbar@work-post': {
+				'navbar': {
 					templateUrl: 'partials/_main-navbar.html'
 				},
-				'footer@work-post': {
+				'footer': {
 					templateUrl: 'partials/_footer.html'
 				}
 			}
 		})
 
 		.state('about', {
-			url: '/about',
+			url: '/profile',
 			views: {
 				'master': {
 					templateUrl: 'partials/_about.html',
 				},
-				'navbar@about': {
+				'navbar': {
 					templateUrl: 'partials/_main-navbar.html'
 				},
-				'footer@about': {
+				'footer': {
 					templateUrl: 'partials/_footer.html'
 				}
 			}
 		})
 
-		.state('contact', {
-			url: '/contact',
-			templateUrl: 'partials/_contact.html'
+		.state('infographics', {
+			url: '/infographics',
+			views: {
+				'master': {
+					templateUrl: 'partials/_infographics.html',
+				},
+				'navbar': {
+					templateUrl: 'partials/_main-navbar.html'
+				},
+				'footer': {
+					templateUrl: 'partials/_footer.html'
+				}
+			}
 		});
 
+		// use the HTML5 History API
+        // $locationProvider.html5Mode(true);
+
 });
+
+
 
 
 
