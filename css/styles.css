@@ -954,7 +954,7 @@ section.infographics {
   height: auto;
   padding: 150px 0px;
   margin-top: 0px;
-  background: url(../images/infographic-collection.jpg) no-repeat center;
+  background: url(../images/infographic-collection_mini.jpg) no-repeat center;
   background-size: cover;
   text-align: center; }
   section.infographics h1 {
@@ -1327,7 +1327,7 @@ section.infographics-jumbotron {
   height: auto;
   padding: 80px 0px;
   margin-top: 53px;
-  background: #28323B url(../images/infographic-header.png) no-repeat center;
+  background: #28323B url(../images/infographic-header.jpg) no-repeat center;
   background-size: cover;
   text-align: center; }
   @media only screen and (min-width: 420px) and (max-width: 768px) {
@@ -1467,47 +1467,3 @@ footer {
                 display: inline-block; } }
     footer .social .fa-bolt {
       color: #0088C8; }
-  footer .contact {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    background: #0088C8;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    padding: 22px 30px; }
-    footer .contact:last-child {
-      margin-right: 0; }
-    @media only screen and (min-width: 768px) and (max-width: 992px) {
-      footer .contact {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        footer .contact:last-child {
-          margin-right: 0; } }
-    @media only screen and (min-width: 992px) and (max-width: 1400px) {
-      footer .contact {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        footer .contact:last-child {
-          margin-right: 0; } }
-    @media only screen and (min-width: 1400px) {
-      footer .contact {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 31.76157%; }
-        footer .contact:last-child {
-          margin-right: 0; } }
-    footer .contact:hover {
-      background: #0077af; }
-    footer .contact:active {
-      background: #006595; }

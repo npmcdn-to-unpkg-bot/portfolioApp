@@ -51,18 +51,4 @@ footer {
 			color: $blue;
 		}	
 	}
-
-	.contact {
-		@include span-columns(12 of 12);
-		@include respond-to(sm-screens) { @include span-columns(4 of 12); }
-		@include respond-to(md-screens) { @include span-columns(4 of 12); }
-		@include respond-to(lg-screens) { @include span-columns(4 of 12); }
-		@include button-bg($blue);
-		@include transition(all 0.2s ease);
-		color: white;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-weight: $bold;
-		padding: 22px 30px;
-	}
 }
